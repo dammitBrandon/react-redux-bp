@@ -26,17 +26,26 @@ export const fetchQuestionSets = async () => {
   });
 };
 
-export const addQuestionSet = (qs) =>
+export const signupUser = ({firstName, lastName, creativeName, email, password}) => (
   delay(500).then(() => {
-    // TODO: Implement adding question set
-    console.log('API#addQuestionSet, qs: ', qs);
-  });
+    console.log('API#signupUser, fields: %s %s %s %s', firstName, lastName, creativeName, email, password);
+    return {
+      status: 'created',
+      statusCode: 201,
+    };
+  })
+);
 
 export const okResponse = () =>
   delay(500).then(() => {
-    console.log('okResponse');
-    return JSON.stringify({
+    console.log('#okResponse, done');
+    return {
       status: 'ok',
-      statusCode: 200
-    });
+      statusCode: 200,
+    };
+    
+    // return JSON.stringify({
+    //   status: 'ok',
+    //   statusCode: 200
+    // });
   });

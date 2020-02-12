@@ -1,6 +1,6 @@
 import {all, call, put} from 'redux-saga/effects';
 
-import {initStart, initFinish, initError} from './redux/index';
+import {initStart, initFinish, initError} from './redux';
 
 import { fetchQuestionSets } from '../../api';
 import { pending, success, failure } from "./redux/question-sets";

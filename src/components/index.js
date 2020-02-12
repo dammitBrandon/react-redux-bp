@@ -7,7 +7,7 @@ import HomePage from './homepage';
 import QuestionSetsPage from './question-sets/question-sets';
 import QuestionSetPage from './question-sets/question-set';
 import LoginPage from './loginpage';
-import SignUpPage from './signup-page';
+import SignUpPage from './signup/signup-page';
 
 class Index extends Component {
   render() {
